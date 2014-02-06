@@ -52,5 +52,7 @@ var app = {
 	sendNotification: function(){
 	    var message = document.getElementById('message').value;
 		navigator.notification.alert(message);
+		
+		console.log('notification sent: ' + message);
 	}
 };
