@@ -27,7 +27,7 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
-		document.getElementById('#send').addEventListener('click', this.sendNotification);
+		document.getElementById('send').addEventListener('click', this.sendNotification);
     },
     // deviceready Event Handler
     //
@@ -50,7 +50,7 @@ var app = {
         console.log('Received Event: ' + id);
     },
 	sendNotification: function(){
-	    var message = document.getElementById('#message').value;
+	    var message = document.getElementById('message').value;
 		navigator.notification.alert(message);
 	}
 };
